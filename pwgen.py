@@ -19,8 +19,6 @@ blacklist = [96]
 
 def pwgen(i):
     pw = ""
-    if blacklist.sort() == [*range(33, 126)]:
-        return
     while len(pw) < i:
         tmp_rnd = rnd(126 - 33) + 33
         if tmp_rnd not in blacklist:
